@@ -10,6 +10,6 @@
 @implementation RCTCalendarModule
 
 // To export a module named RCTCalendarModule
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(CalendarModuleFoo); // Param is the name of the module
 
 @end

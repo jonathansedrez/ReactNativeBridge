@@ -5,14 +5,18 @@
 //  Created by Jonathan de Britto Sedrez on 03/11/25.
 //
 
-#import "RCTCalendarModule.h"
+#import "CalendarModule.h"
+#import <React/RCTLog.h>
 
-@implementation RCTCalendarModule
+@implementation CalendarModule
 
-// To export a module named RCTCalendarModule
-RCT_EXPORT_MODULE(CalendarModuleFoo); // Param is the name of the module
+// This makes the module visible to React Native
+RCT_EXPORT_MODULE();
+
+// Example of a method accessible from JavaScript
+RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name location:(NSString *)location)
 {
- RCTLogInfo(@"Pretending to create an event %@ at %@", name, location);
+  RCTLogInfo(@"Pretending to create an event %@ at %@", name, location);
 }
 
 @end

@@ -14,9 +14,12 @@
 RCT_EXPORT_MODULE();
 
 // Example of a method accessible from JavaScript
-RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name location:(NSString *)location)
+RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name
+                  location:(NSString *)location
+                  date:(NSString *)date)
 {
-  RCTLogInfo(@"Pretending to create an event %@ at %@", name, location);
+  RCTLogInfo(@"Pretending to create an event %@ at %@ on %@", name, location, date);
 }
+
 
 @end

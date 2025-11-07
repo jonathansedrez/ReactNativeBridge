@@ -17,9 +17,12 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name
                   location:(NSString *)location
                   date:(NSString *)date)
-{
-  RCTLogInfo(@"Pretending to create an event %@ at %@ on %@", name, location, date);
-}
+RCTLogInfo(@"Event details: %@", @{
+  @"name": name,
+  @"location": location,
+  @"date": date
+});
+
 
 
 @end

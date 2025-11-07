@@ -5,9 +5,7 @@ const NewModuleButton = () => {
   const { CalendarModule } = NativeModules;
 
   const onPress = () => {
-    console.log('We will invoke the native module here!');
-
-    CalendarModule.createCalendarEvent('testName', 'testLocation');
+    CalendarModule?.createCalendarEvent('testName', 'testLocation');
   };
 
   return (

@@ -1,8 +1,8 @@
 //
-//  RCTCalendarModule.m
-//  
+//  CalendarModule.m
+//  ReactNativeBridge
 //
-//  Created by Jonathan de Britto Sedrez on 03/11/25.
+//  Created by Jonathan de Britto Sedrez on 06/11/25.
 //
 
 #import "CalendarModule.h"

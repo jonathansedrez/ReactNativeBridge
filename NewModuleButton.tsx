@@ -5,7 +5,11 @@ const NewModuleButton = () => {
   const { CalendarModule } = NativeModules;
 
   const onPress = () => {
-    CalendarModule?.createCalendarEvent('testName', 'testLocation');
+    CalendarModule?.createCalendarEvent(
+      'testName',
+      'testLocation',
+      '2025-11-07',
+    );
   };
 
   return (

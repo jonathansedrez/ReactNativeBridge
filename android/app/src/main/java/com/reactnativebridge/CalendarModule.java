@@ -1,4 +1,5 @@
 package com.reactnativebridge;
+
 import android.util.Log;
 
 import com.facebook.react.bridge.NativeModule;
@@ -20,8 +21,8 @@ public class CalendarModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void createCalendarEvent(String name, String location) {
+    public void createCalendarEvent(String name, String location, String date) {
         Log.d("CalendarModule", "Create event called with name: " + name
-                + " and location: " + location);
+                + " and location: " + location + " and date: " + date);
     }
 }
